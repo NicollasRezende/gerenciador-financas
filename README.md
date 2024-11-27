@@ -22,45 +22,84 @@ O Gerenciador de Finanças é uma aplicação web desenvolvida para ajudar os us
 ## Estrutura do Projeto
 
 gerenciador-financascd/
-├── public/
-│ ├── index.html
-│ ├── favicon.ico
-│ ├── logo192.png
-│ ├── logo512.png
-│ └── manifest.json
-├── src/
-│ ├── components/
-│ │ ├── ExportPdfModal/
-│ │ │ └── index.jsx
-│ │ ├── Layout/
-│ │ │ └── index.jsx
-│ │ ├── Loading/
-│ │ │ └── index.jsx
-│ │ ├── ThemeToggle/
-│ │ │ └── index.jsx
-│ │ ├── Toast/
-│ │ │ └── index.jsx
-│ │ └── TransactionForm/
-│ │ └── index.jsx
-│ ├── contexts/
-│ │ ├── ThemeContext.jsx
-│ │ └── TransactionsContext.jsx
-│ ├── pages/
-│ │ ├── Dashboard/
-│ │ │ └── index.jsx
-│ │ ├── Reports/
-│ │ │ └── index.jsx
-│ │ └── Transactions/
-│ │ └── index.jsx
-│ ├── styles/
-│ │ ├── breakpoints.js
-│ │ └── global.js
-│ ├── App.js
-│ ├── index.js
-│ └── ThemedApp.js
-├── .gitignore
-├── package.json
-└── README.md
+
+  ├── public/
+  
+  │   ├── index.html
+  
+  │   ├── favicon.ico
+  
+  │   ├── logo192.png
+  
+  │   ├── logo512.png
+  
+  │   └── manifest.json
+  
+  ├── src/
+  
+  │   ├── components/
+  
+  │   │   ├── ExportPdfModal/
+  
+  │   │   │   └── index.jsx
+  
+  │   │   ├── Layout/
+  
+  │   │   │   └── index.jsx
+  
+  │   │   ├── Loading/
+
+  │   │   │   └── index.jsx
+
+  │   │   ├── ThemeToggle/
+  
+  │   │   │   └── index.jsx
+  
+  │   │   ├── Toast/
+  
+  │   │   │   └── index.jsx
+  
+  │   │   └── TransactionForm/
+  
+  │   │       └── index.jsx
+  
+  │   ├── contexts/
+  
+  │   │   ├── ThemeContext.jsx
+  
+  │   │   └── TransactionsContext.jsx
+  
+  │   ├── pages/
+  
+  │   │   ├── Dashboard/
+  
+  │   │   │   └── index.jsx
+  
+  │   │   ├── Reports/
+  
+  │   │   │   └── index.jsx
+  
+  │   │   └── Transactions/
+  
+  │   │       └── index.jsx
+  
+  │   ├── styles/
+  
+  │   │   ├── breakpoints.js
+  
+  │   │   └── global.js
+  
+  │   ├── App.js
+  
+  │   ├── index.js
+  
+  │   └── ThemedApp.js
+  
+  ├── .gitignore
+  
+  ├── package.json
+  
+  └── README.md
 
 ## Responsividade
 
