@@ -1,4 +1,4 @@
-// src/App.js
+// src/ThemedApp.js
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
@@ -6,7 +6,6 @@ import Dashboard from './pages/Dashboard';
 import Transactions from './pages/Transactions';
 import Reports from './pages/Reports';
 import { TransactionsProvider } from './contexts/TransactionsContext';
-import { ThemeProvider } from './contexts/ThemeContext';
 import { useTheme } from './contexts/ThemeContext';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
@@ -20,10 +19,7 @@ const ThemedApp = () => {
                     <Layout>
                         <Routes>
                             <Route path="/" element={<Dashboard />} />
-                            <Route
-                                path="/transactions"
-                                element={<Transactions />}
-                            />
+                            <Route path="/transactions" element={<Transactions />} />
                             <Route path="/reports" element={<Reports />} />
                         </Routes>
                     </Layout>
@@ -33,12 +29,4 @@ const ThemedApp = () => {
     );
 };
 
-function App() {
-    return (
-        <ThemeProvider>
-            <ThemedApp />
-        </ThemeProvider>
-    );
-}
-
-export default App;
+export default ThemedApp;
