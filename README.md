@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Gerenciador de Finanças
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+O Gerenciador de Finanças é uma aplicação web desenvolvida para ajudar os usuários a gerenciar suas finanças pessoais. A aplicação permite que os usuários registrem transações, visualizem relatórios financeiros e exportem dados em formato PDF.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+-   **Dashboard**: Visão geral das finanças, incluindo saldo total, receitas e despesas.
+-   **Transações**: Registro de transações financeiras com descrição, valor, tipo (receita ou despesa) e data.
+-   **Relatórios**: Visualização de gráficos e tabelas com dados financeiros, incluindo balanço mensal e maiores despesas.
+-   **Exportação de PDF**: Geração de relatórios financeiros em formato PDF.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+-   **Styled-components**: Biblioteca para estilização de componentes em React.
+-   **Recharts**: Biblioteca para criação de gráficos em React.
+-   **jspdf**: Biblioteca para geração de arquivos PDF.
+-   **html2canvas**: Biblioteca para captura de screenshots de elementos HTML.
 
-### `npm test`
+## Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+gerenciador-financascd/
+├── public/
+│ ├── index.html
+│ ├── favicon.ico
+│ ├── logo192.png
+│ ├── logo512.png
+│ └── manifest.json
+├── src/
+│ ├── components/
+│ │ ├── ExportPdfModal/
+│ │ │ └── index.jsx
+│ │ ├── Layout/
+│ │ │ └── index.jsx
+│ │ ├── Loading/
+│ │ │ └── index.jsx
+│ │ ├── ThemeToggle/
+│ │ │ └── index.jsx
+│ │ ├── Toast/
+│ │ │ └── index.jsx
+│ │ └── TransactionForm/
+│ │ └── index.jsx
+│ ├── contexts/
+│ │ ├── ThemeContext.jsx
+│ │ └── TransactionsContext.jsx
+│ ├── pages/
+│ │ ├── Dashboard/
+│ │ │ └── index.jsx
+│ │ ├── Reports/
+│ │ │ └── index.jsx
+│ │ └── Transactions/
+│ │ └── index.jsx
+│ ├── styles/
+│ │ ├── breakpoints.js
+│ │ └── global.js
+│ ├── App.js
+│ ├── index.js
+│ └── ThemedApp.js
+├── .gitignore
+├── package.json
+└── README.md
 
-### `npm run build`
+## Responsividade
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Atualmente, a aplicação não está totalmente otimizada para dispositivos móveis. A responsividade será implementada em futuras atualizações.
